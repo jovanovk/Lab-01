@@ -1,0 +1,32 @@
+gmkdir lab1
+cd lab1
+notepad l1.txt
+git init
+git add .
+git commit -m 'Initial commit'
+notepad l1.txt
+git add .
+git commit -m 'modify l1.txt'
+git remote add origin https://github.com/jovanovk/Lab1.git
+git remote -v
+git push origin master
+git reset
+git checkout -b logging
+git checkout logging
+git log
+notepad log.txt
+git add .
+git push origin logging
+git push --set-upstream origin logging
+git checkout master
+git merge logging
+git push
+git checkout -b allcomands
+git checkout allcomands
+notepad allcommands.txt
+git add .
+git commit -m 'added allcomands.txt'
+git push --set-upstream origin allcomands
+git checkout master
+git rebase allcomands
+
